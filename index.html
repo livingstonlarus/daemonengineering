@@ -19,6 +19,7 @@
     }
 
     .splash-container {
+      position: relative;
       width: 100%;
       height: 100%;
       background-image: url('/logo -background.png');
@@ -31,7 +32,9 @@
 </head>
 
 <body>
-  <div class="splash-container"></div>
+  <div class="splash-container">
+    {{> footer }}
+  </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
